@@ -6,9 +6,8 @@ namespace Pruebas
     {
         static void Main(string[] args)
         {
-            RecorridoArray.Inicio();
+            //RecorridoArray.Inicio();
 
-            //NumerosPrimos.Inicio();
         }
     }
 }

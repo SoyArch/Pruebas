@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Collections;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Pruebas
 {
@@ -22,46 +20,49 @@ namespace Pruebas
 
             ArrayList arrayl = new ArrayList();
 
-            for (int a=0; a<10; a++) {
-
+            for (int a = 0; a < 10; a++)
+            {
                 arrayl.Add(a);
+
             }
 
-            switch (opcion) { 
 
-            case 1:
-
-            // Recorrido de array con for
-
-            for (int i = 0; i < arrayl.Count; i++)
+            switch (opcion)
             {
-                Console.WriteLine("Numero: {0}", arrayl[i]);
-            }
-            
-            break;
+                case 1:
 
-            case 2:
+                    // Recorrido de array con for
 
-            // Recorrido de array con while
+                    for (int i = 0; i < arrayl.Count; i++)
+                    {
+                        Console.WriteLine("Numero: {0}", arrayl[i]);
+                    }
 
-            int fin = 0;   
-            int j = 0;
+                    break;
 
-            while (fin == 0)
-            {
+                case 2:
 
-                j = j + 1;
-                
-                if (j == arrayl.Count)
-                {
-                    fin = 1;
-                }
-                else {
+                    // Recorrido de array con while
 
-                    Console.WriteLine("Numero: {0}", arrayl[j]);
-                }
+                    int fin = 0;
+                    int j = 0;
 
-            }
+                    while (fin == 0)
+                    {
+
+                        j = j + 1;
+
+                        if (j == arrayl.Count)
+                        {
+                            fin = 1;
+                        }
+                        else
+                        {
+
+                            Console.WriteLine("Numero: {0}", arrayl[j]);
+                        }
+
+                    }
                     break;
 
             }
